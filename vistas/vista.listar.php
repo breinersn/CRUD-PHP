@@ -38,9 +38,9 @@ include '../crud/conexion.php';
                 <td><?php echo $fila['apellido2'] ?></td>
                 <td><?php echo $fila['cargo'] ?></td>
                 
-                <td><a href="../crud/modificar.php?id=<?php echo $fila['id'] ?>">&#10004;</a></td>
-                <td><a href="./vista.ingresar.php">&#10133;</a></td>
-                <td><a href="../crud/eliminar.php?id=<?php echo $fila['id'] ?>">&#10006;</a></td>
+                <td><a title="Modificar" href="../crud/modificar.php?id=<?php echo $fila['id'] ?>">&#10004;</a></td>
+                <td><a title="Agregar" href="./vista.ingresar.php">&#10133;</a></td>
+                <td><a title="Eliminar" href="../crud/eliminar.php?id=<?php echo $fila['id'] ?>">&#10006;</a></td>
             </tr>
         <?php } ?>
 
